@@ -1,4 +1,4 @@
-public class Operadores_Boleanos {
+public class OperadoresBoleanos {
     public static void main(String[] args) {
         boolean fimDeSemana = true;
         boolean fazendoSol = true; 
@@ -20,9 +20,5 @@ public class Operadores_Boleanos {
         // true || false = true
         // false || true = true
         // false || false = false
-
-
-
     }
-
 }
