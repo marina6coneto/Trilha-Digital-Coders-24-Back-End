@@ -2,15 +2,14 @@ package projetoPOO;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello World.");
-        byte variavelByte = 127;
-        System.out.println(variavelByte);
+        Cachorro cachorro1 = new Cachorro();
+        cachorro1.nome = "Puppy";
+        cachorro1.altura = 25;
+        cachorro1.cor = "caramelo";
+        cachorro1.peso = 5.5;
+        cachorro1.tamanhoDoRabo = 5;
+
+        System.out.println(cachorro1.nome);
     }
+    
 }
-
-
-// byte -127 até 127
-// short -32768 até 32767
-// char 0 até 65535 
-// int -2b até 2b
-// long -9t até 9t
