@@ -3,6 +3,7 @@ package projetoPOO.animais;
 public class Cachorro {
 
     // ATRIBUTOS
+    static int numerosDeCachorro;
     private String nome;
     private String cor;
     private int altura;
@@ -21,10 +22,21 @@ public class Cachorro {
         this.tamanhoDoRabo = tamanhoDoRabo;
         this.estadoDeEspirito = estadoDeEspirito;
 
+        numerosDeCachorro ++;
+
     }
 
     
     // MÉTODOS
+    public static int getNumerosDeCachorro(){
+        return numerosDeCachorro;
+    }
+
+    public static void setNumerosDeCachorro(int numerosDeCachorro){
+        Cachorro.numerosDeCachorro = numerosDeCachorro;
+
+    }
+
     public String getNome(){
         return this.nome;
     }
@@ -96,6 +108,13 @@ public class Cachorro {
         //     this.estadoDeEspirito = ("neutro");
         // }
         // return estadoDeEspirito;
+
+
+    }
+
+    @Override
+    public String toString(){
+        return "Cachorro{" + "nome='" + nome + '\'' + "}";
     }
     
 }
