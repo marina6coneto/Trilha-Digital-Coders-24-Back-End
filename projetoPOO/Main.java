@@ -9,7 +9,11 @@ public class Main {
         cachorro1.peso = 5.5;
         cachorro1.tamanhoDoRabo = 5;
 
-        System.out.println(cachorro1.nome);
+        cachorro1.latir();
+        System.out.println("O cachorro pegou uma " + cachorro1.pegar());
+        System.out.println("O cachorro está " + cachorro1.interagir("carinho"));
+        System.out.println("O cachorro está " + cachorro1.interagir("nada"));
+        System.out.println("O cachorro está " + cachorro1.interagir("vai dormir!"));
     }
     
 }
