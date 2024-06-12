@@ -17,7 +17,9 @@ public class Passaro extends Animal{
     }
 
     @Override
-    public void soar(){}
+    public void soar(){
+        System.out.println("PIU PIU!");
+    }
 }
     
 

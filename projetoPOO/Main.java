@@ -8,11 +8,22 @@ public class Main {
     public static void main(String[] args) {
         
         Cachorro cachorro1 = new Cachorro("Puppy", "caramelo", 25, 5.5, 5, "nada");
-
-
         Gato gato1 = new Gato("Félix", "preto", 4.5);
+        Passaro passaro1 = new Passaro("Félix", "preto", 4.5);
 
-        Passaro passaro1 = new Passaro("Frajola", "azul", 0.5);
+
+        // Passaro passaro1 = new Passaro("Frajola", "azul", 0.5);
+
+        // Petshop petshop = new Petshop();
+        
+        // petshop.darBanho(passaro1);
+        // System.out.println(passaro1.getEstadoDeEspirito());
+
+        // petshop.deixarNoHotel(gato1);
+        // System.out.println(gato1.getEstadoDeEspirito());
+
+        // petshop.tosar(cachorro1);
+        // System.out.println(cachorro1.getEstadoDeEspirito());
 
 
         cachorro1.soar();
