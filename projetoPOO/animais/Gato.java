@@ -4,7 +4,7 @@ public class Gato extends Animal{
 
     public Gato(String nome, String cor, double peso) {
         super(nome, cor, peso);
-        //TODO Auto-generated constructor stub
+
     }
 
 
@@ -18,7 +18,7 @@ public class Gato extends Animal{
 
     @Override
     public void soar() {
-        // TODO Auto-generated method stub
+
         System.out.println("MIAU MIAU!");
     }
 
