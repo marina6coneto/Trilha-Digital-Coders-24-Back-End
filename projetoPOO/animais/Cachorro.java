@@ -1,20 +1,14 @@
 package projetoPOO.animais;
 
-public class Cachorro {
+public class Cachorro extends Animal {
 
     // ATRIBUTOS
     static int numerosDeCachorro;
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
     private int tamanhoDoRabo;
-    private String estadoDeEspirito;
-
 
     // CONSTRUTORES
-    public Cachorro(){}
     public Cachorro(String nome, String cor, int altura, double peso, int tamanhoDoRabo, String estadoDeEspirito){
+        super(nome, cor , peso);
         this.nome = nome;
         this.cor = cor; 
         this.altura = altura;
@@ -25,7 +19,6 @@ public class Cachorro {
         numerosDeCachorro ++;
 
     }
-
     
     // MÉTODOS
     public static int getNumerosDeCachorro(){
@@ -34,7 +27,6 @@ public class Cachorro {
 
     public static void setNumerosDeCachorro(int numerosDeCachorro){
         Cachorro.numerosDeCachorro = numerosDeCachorro;
-
     }
 
     public String getNome(){
@@ -78,14 +70,8 @@ public class Cachorro {
     }
 
 
-
-    public void latir(){
-        System.out.println("AU AU");
-    };
-
     public String pegar(){
         return "Bolinha";
-
     }
     
     public String interagir(String acao){
@@ -109,12 +95,18 @@ public class Cachorro {
         // }
         // return estadoDeEspirito;
 
-
     }
 
     @Override
     public String toString(){
         return "Cachorro{" + "nome='" + nome + '\'' + "}";
     }
+
+    @Override
+    public void soar(){
+        System.out.println("AU AU");
+    }
+
+
     
 }
